@@ -1,0 +1,407 @@
+    .App {
+        text-align: center;
+    }
+    
+    .App-logo {
+        height: 40vmin;
+        pointer-events: none;
+    }
+    
+    @media (prefers-reduced-motion: no-preference) {
+        .App-logo {
+            animation: App-logo-spin infinite 15s linear;
+            padding-top: 100px;
+        }
+    }
+    
+    .App-header {
+        background-color: rgb(226, 166, 202);
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: calc(10px + 2vmin);
+        color: white;
+    }
+    
+    .App-link {
+        color: #61dafb;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    
+    @keyframes App-logo-spin {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+    
+    .logoname {
+        color: black;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        padding-top: 30px;
+    }
+    /* App.css */
+    
+    .search-bar {
+        display: flex;
+        gap: 10px;
+        margin-top: 20px;
+    }
+    
+    .search-bar input {
+        padding: 8px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    
+    .search-bar button {
+        padding: 8px 16px;
+        font-size: 16px;
+        color: white;
+        background-color: #d53c49;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    .search-bar button:hover {
+        background-color: #b30000;
+    }
+    
+    .search-bar input:hover {
+        background-color: white;
+    }
+    
+    .App {
+        text-align: center;
+    }
+    
+    .App-logo {
+        height: 40vmin;
+        pointer-events: none;
+    }
+    
+    .logoname {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+    
+    .search-bar {
+        margin: 20px 0;
+    }
+    
+    .state-selector {
+        margin-top: 30px;
+    }
+    
+    .state-carousel {
+        display: flex;
+        overflow-x: auto;
+        gap: 15px;
+        padding: 10px 0;
+        scroll-snap-type: x mandatory;
+        /* Enable scroll snapping */
+        -webkit-overflow-scrolling: touch;
+        /* For smoother scrolling on iOS */
+    }
+    
+    .state-card {
+        min-width: 150px;
+        padding: 10px;
+        background-color: #f4f4f4;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        /* Transition for scale and shadow */
+        text-align: center;
+        scroll-snap-align: start;
+        /* Ensures each card snaps into place */
+        will-change: transform, box-shadow;
+        /* Optimizes the transition */
+    }
+    
+    .state-card:hover {
+        transform: scale(1.05);
+        /* Slight scale on hover */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        /* Enhanced shadow effect on hover */
+    }
+    
+    .state-card.selected {
+        border: 2px solid #007BFF;
+        background-color: #e0f0ff;
+    }
+    
+    .state-image {
+        width: 100%;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+    
+    .state-card h3 {
+        font-size: 1.1rem;
+        margin-top: 10px;
+    }
+    
+    .App-link {
+        color: #61dafb;
+    }
+    
+    .state-carousel {
+        display: flex;
+        overflow-x: auto;
+        gap: 15px;
+        padding: 10px 0;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .state-card {
+        min-width: 150px;
+        padding: 10px;
+        background-color: #f4f4f4;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        text-align: center;
+        scroll-snap-align: start;
+    }
+    
+    .state-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    
+    .state-card.selected {
+        border: 2px solid #007BFF;
+        background-color: #e0f0ff;
+    }
+    
+    .state-image {
+        width: 100%;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+    
+    .state-name {
+        margin-top: 10px;
+        font-size: 1rem;
+        font-weight: bold;
+        color: #333;
+    }
+    
+    .city-selector {
+        margin-top: 30px;
+    }
+    
+    .state-carousel {
+        display: flex;
+        overflow-x: auto;
+        gap: 15px;
+        padding: 10px 0;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .state-card {
+        min-width: 150px;
+        padding: 10px;
+        background-color: #f4f4f4;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        text-align: center;
+        scroll-snap-align: start;
+    }
+    
+    .state-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    
+    .state-card.selected {
+        border: 2px solid #007BFF;
+        background-color: #e0f0ff;
+    }
+    
+    .state-image {
+        width: 100%;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+    
+    .state-name {
+        margin-top: 10px;
+        font-size: 1rem;
+        font-weight: bold;
+        color: #333;
+    }
+    
+    .place-selector {
+        margin-top: 30px;
+    }
+    
+    .state-carousel {
+        display: flex;
+        overflow-x: auto;
+        gap: 15px;
+        padding: 10px 0;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .state-card {
+        min-width: 150px;
+        padding: 10px;
+        background-color: #f4f4f4;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        text-align: center;
+        scroll-snap-align: start;
+    }
+    
+    .state-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    
+    .state-card.selected {
+        border: 2px solid #007BFF;
+        background-color: #e0f0ff;
+    }
+    
+    .state-image {
+        width: 100%;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+    
+    .state-name {
+        margin-top: 10px;
+        font-size: 1rem;
+        font-weight: bold;
+        color: #333;
+    }
+    
+    .place-selector {
+        margin-top: 30px;
+    }
+    
+    .transport-selector {
+        margin-top: 30px;
+    }
+    
+    .transport-selector .state-card {
+        min-width: 120px;
+        padding: 10px;
+        background-color: #f4f4f4;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        text-align: center;
+    }
+    
+    .transport-selector .state-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0)
+    }
+    
+    .App-footer {
+        background-color: #f8f8f8;
+        color: #333;
+        padding: 20px;
+        text-align: center;
+        font-size: 14px;
+        border-top: 1px solid #ddd;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+    
+    .App-footer p {
+        margin: 5px 0;
+    }
+    
+    .footer-links {
+        margin: 10px 0;
+    }
+    
+    .footer-links a {
+        margin: 0 10px;
+        text-decoration: none;
+        color: #007bff;
+        transition: color 0.3s;
+    }
+    
+    .footer-links a:hover {
+        color: #0056b3;
+    }
+    /* Styling for the header */
+    
+    .App-header {
+        background-color: #f2f9ff;
+        color: #333;
+        padding: 20px;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+    }
+    
+    .header-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+    
+    .App-logo {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .header-title {
+        font-size: 2em;
+        color: #4a90e2;
+        margin: 0;
+    }
+    
+    .header-slogan {
+        font-size: 1.2em;
+        color: #666;
+        margin: 10px 0 0;
+        font-style: italic;
+    }
+    
+    .submit button {
+        color: white;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 22px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 22px;
+        padding-right: 22px;
+        margin-top: 30px;
+        margin: 20px;
+        margin-top: 50px;
+        background-color: rgb(197, 38, 197);
+        border: none;
+    }
+    
+    .submit button:hover {
+        background-color: purple;
+    }
